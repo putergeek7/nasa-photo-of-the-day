@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import PhotoCard from './PhotoCard';
+import SpaceCard from './SpaceCard';
 
 function App() {
 	const [nasaImg, setNasaImg] = useState([]);
@@ -21,7 +21,7 @@ function App() {
 			<header>
 				<h1>NASA's PHOTO OF THE DAY</h1>
 			</header>
-			<PhotoCard
+			<SpaceCard
 				title={nasaImg.title}
 				url={nasaImg.hdurl}
 				explanation={nasaImg.explanation}
