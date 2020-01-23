@@ -21,7 +21,7 @@ function App() {
 	return (
 		<div className='App'>
 			<header>
-				<h1>NASA PHOTO OF THE DAY</h1>
+				<h1>NASA's PHOTO OF THE DAY</h1>
 			</header>
 			<PhotoCard
 				title={nasaImg.title}

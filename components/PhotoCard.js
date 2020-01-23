@@ -2,7 +2,7 @@ import React from 'react';
 
 // I still don't know
 
-const PhotoCard = props => {
+const SpaceCard = props => {
 	return (
 		<div>
 			<h1>{props.title}</h1>
@@ -16,4 +16,4 @@ const PhotoCard = props => {
 	);
 };
 
-export default PhotoCard;
+export default SpaceCard;
