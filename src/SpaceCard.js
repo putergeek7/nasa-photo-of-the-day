@@ -1,18 +1,31 @@
 import React from 'react';
+import {
+	Card,
+	CardImg,
+	CardText,
+	CardBody,
+	CardLink,
+	CardTitle,
+	CardSubtitle
+} from 'reactstrap';
 
-const SpaceCard = props => {
+const Example = props => {
 	return (
 		<div>
-			<img src={props.url} alt='Nasa Image' />
-			<div>
-				<h1>{props.title}</h1>
-				<h2>{props.date}</h2>
-				<h3>Details</h3>
-				<p>{props.explanation}</p>
-				<p>{props.copyright}</p>
-			</div>
+			<Card>
+				<CardBody>
+					<CardTitle className='titleBold'>{props.title}</CardTitle>
+					<CardSubtitle className='dateBold'>{props.date}</CardSubtitle>
+				</CardBody>
+				<img height='600px' width='70%' src={props.url} alt='Card image cap' />
+				<CardBody>
+					<CardText className='textCenter'>{props.explanation}</CardText>
+					<CardLink href='#'>Card Link</CardLink>
+					<CardLink href='#'>Another Link</CardLink>
+				</CardBody>
+			</Card>
 		</div>
 	);
 };
 
-export default SpaceCard;
+export default Example;
