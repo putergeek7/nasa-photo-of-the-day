@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import PhotoCard from './Components/PhotoCard';
-
-// I don't know what i am doing....
+import SpaceCard from './SpaceCard';
 
 function App() {
 	const [nasaImg, setNasaImg] = useState([]);
@@ -21,13 +19,14 @@ function App() {
 	return (
 		<div className='App'>
 			<header>
-				<h1>NASA PHOTO OF THE DAY</h1>
+				<h1>NASA's PHOTO OF THE DAY</h1>
 			</header>
-			<PhotoCard
+			<SpaceCard
 				title={nasaImg.title}
-				url={nasaImg.url}
+				url={nasaImg.hdurl}
 				explanation={nasaImg.explanation}
 				date={nasaImg.date}
+				copyright={nasaImg.copyright}
 			/>
 		</div>
 	);
